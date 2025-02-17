@@ -4,15 +4,16 @@
   "engines": {
     "node": ">=16.x"
   },
-  "homepage": "https://yourusername.github.io/your-repo-name",
+  "homepage": "https://akashmishra2811.github.io/my-portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
-    "build": "rimraf ./build && react-scripts build",
-    "lint": "eslint \"**/*.js\"",
     "start": "react-scripts start",
-    "test": "npx jest"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyze": "npm run build && source-map-explorer build/static/js/*.chunk.js",
+    "lint": "eslint \"**/*.js\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
